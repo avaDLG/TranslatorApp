@@ -10,7 +10,8 @@ def main():
     # setting the dimensions of the window
     window.geometry('450x800')
     # making sure the window is not re-sizable
-    window.resizable(False, False)
+    window.minsize(450, 800)
+    window.maxsize(450, 800)
 
     widgets = GUI(window)
     window.mainloop()
