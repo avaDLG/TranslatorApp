@@ -3,9 +3,14 @@ from tkinter import *
 
 
 def main():
+    # creating the gui window
     window = Tk()
+    # titling the window
     window.title('Python Translator')
-    window.geometry('450x700')
+    # setting the dimensions of the window
+    window.geometry('450x800')
+    # making sure the window is not re-sizable
+    window.resizable(False, False)
 
     widgets = GUI(window)
     window.mainloop()
