@@ -1,3 +1,7 @@
+# videos that helped me!
+# https://www.youtube.com/watch?v=64f5fKBM3-o&t=200s
+
+
 from gui import *
 from tkinter import *
 

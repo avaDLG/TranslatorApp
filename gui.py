@@ -4,6 +4,7 @@ import googletrans
 import textblob
 import textblob.exceptions
 import textwrap
+import pyttsx3
 
 
 class GUI:
@@ -87,6 +88,7 @@ class GUI:
                 wrapper = textwrap.TextWrapper(width=30)
                 text = wrapper.fill(text=text)
                 self.translated_label['text'] = text
+                self.user_text.delete(1.0, END)
 
             # the textblob translation exceptions will show an error and clear the entry box
             except textblob.exceptions.NotTranslated:
